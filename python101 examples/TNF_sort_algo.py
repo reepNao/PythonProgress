@@ -1,4 +1,7 @@
 import random
+#Dutch National Flag (DNF) - It is a programming problem proposed by Edsger Dijkstra. 
+#The flag of the Netherlands consists of three colors: white, red, and blue. 
+#The task is to randomly arrange balls of white, red, and blue in such a way that balls of the same color are placed together.
 # TNF(Turkey National Flag)
 # Python program to sort a sequence containing only red (0) and white (1) in a single pass.
 red = 0    # The first color of the flag.
