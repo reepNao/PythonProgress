@@ -1,5 +1,5 @@
 import random
-
+# TNF(Turkey National Flag)
 # Python program to sort a sequence containing only red (0) and white (1) in a single pass.
 red = 0    # The first color of the flag.
 white = 1  # The second color of the flag.
