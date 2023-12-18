@@ -39,18 +39,13 @@ def process_log(input_file_path, output_file_path):
     try:
         with open(input_file_path, 'r') as input_file:
             content = input_file.read()
-
-            # Key. ile başlayan kısımları ayıkla
             processed_content = ' '.join(word.split('.')[-1] if 'Key.' in word else word for word in content.split())
-
+		
             with open(output_file_path, 'a') as output_file:
                 output_file.write(processed_content)
-
             print(f"Processed content written to '{output_file_path}' successfully.")
-
     except FileNotFoundError:
         print("Error: One or both of the files not found.")
-
     except Exception as e:
         print(f"An error occurred: {e}")
 
